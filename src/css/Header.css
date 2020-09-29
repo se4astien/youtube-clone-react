@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  background-color: grey;
+}
+
+.header-menu,
+.header-form,
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-menu .logo {
+  height: 70px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+.header .header-form input {
+  height: 37px;
+  border: 1px solid #222;
+  border-right: none;
+  padding: 0 10px;
+  outline: none;
+}
+
+.header .header-form button {
+  padding: 3px 15px;
+}
