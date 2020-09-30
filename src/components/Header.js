@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Header.css';
 import faker from 'faker';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -10,23 +11,35 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 
 const Header = () => {
+  const [inputSearch, setInputSearch] = useState('');
+
   return (
     <div className='header'>
       <div className='header-menu'>
         <IconButton>
           <MenuIcon />
         </IconButton>
-        <img
-          className='logo'
-          src='https://pngimg.com/uploads/youtube/youtube_PNG13.png'
-          alt='YouTube Logo'
-        />
+        <Link to='/'>
+          <img
+            className='logo'
+            src='https://pngimg.com/uploads/youtube/youtube_PNG13.png'
+            alt='YouTube Logo'
+          />
+        </Link>
       </div>
 
       <div className='header-form'>
-        <input type='text' />
+        <input
+          type='text'
+          placeholder='Search...'
+          value={inputSearch}
+          onChange={(e) => setInputSearch(e.target.value)}
+        />
+
         <button>
-          <SearchIcon />
+          <Link to={`/search/${inputSearch}`}>
+            <SearchIcon />
+          </Link>
         </button>
       </div>
 

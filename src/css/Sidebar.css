@@ -1,0 +1,31 @@
+.sidebar {
+  flex: 0.2; /* 20% */
+}
+
+.sidebar-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sidebar-row_icon {
+  font-size: 16px;
+  color: #606060;
+}
+
+.sidebar-row_title {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sidebar-row:hover,
+.sidebar-row.selected {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.sidebar-row:hover .sidebar-row_icon,
+.sidebar-row.selected .sidebar-row_icon {
+  color: rgb(209, 5, 5);
+}

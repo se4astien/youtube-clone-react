@@ -9,4 +9,15 @@ body {
 }
 
 .container {
+  max-width: 98vw;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  margin-top: 10px;
+}
+
+a {
+  color: inherit;
 }
