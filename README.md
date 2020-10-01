@@ -1,6 +1,6 @@
 ## YouTube Clone with React JS and Firebase
 
-Create YouTube Clone using React JS and Firebase for databse and deploy.
+Create YouTube Clone using React JS and Firebase for database and deploy.
 
 ## Project Specifications
 
