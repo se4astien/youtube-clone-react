@@ -1,2 +1,16 @@
 .search-page {
+  flex: 0.8;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.search-page_filter {
+  display: flex;
+  align-items: center;
+  color: #606060;
+  font-size: xx-small !important;
+}
+
+.search-page_filter > h2 {
+  margin-left: 10px;
 }
